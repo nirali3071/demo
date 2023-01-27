@@ -1,0 +1,18 @@
+1.What is Software?
+   -> Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis.
+
+2.What are the types of Applications?
+ ->Web Development
+ ->Game Development
+ ->Scientific and Numeric Applications
+ ->Artificial Intelligence and Machine Learning
+ ->Software Development
+ ->Enterprise-level/Business Applications
+ ->Education programs and training courses
+ ->Language Development
+
+3.What is programing?
+  ->python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis.
+
+4. What is Python?
+  ->Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
