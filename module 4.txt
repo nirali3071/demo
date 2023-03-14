@@ -1,0 +1,165 @@
+1.What is File function in python? What is keywords to create and write file.
+  
+  In Python, you use the open() function with one of the following options – "x" or "w" – to create a new file: "x" – Create: this command will create a new file if and only if there is no file already in existence with that name or else it will return an error.
+
+2.Write a Python program to read an entire text file.
+
+   The read() method returns the entire contents of the file as a single string (or just some characters if you provide a number as an input parameter. The readlines method returns the entire contents of the entire file as a list of strings, where each item in the list is one line of the file.
+
+3.Write a Python program to append text to a file and display the text.
+
+   You can display the contents of a file using the cat command, which stands for concatenate. Let's say we have a file on our Desktop called myFile.
+
+4.Write a Python program to read last n lines of a file.
+
+ Using the readlines() function (returns a list with each line in the file represented as a list item. To limit the number of lines returned, use the hint argument. No more lines are returned if the total amount of bytes returned exceeds the specified number) to obtain the list of lines of a given input text file
+
+5.Write a Python program to read a file line by line and store it into a list
+
+  To read files, use the readlines() method. Once you've read a file, you use split() to turn those lines into a list.
+
+6.Write a Python program to read a file line by line store it into a variable.
+
+  Sample Solution:-
+Python Code: def file_read(fname): with open (fname, "r") as myfile: data=myfile.readlines() print(data) file_read('test.txt') ...
+Flowchart:
+Python Code Editor: ...
+Have another way to solve this solution?
+
+
+7.Write a python program to find the longest words. 
+
+  Contain of text.txt. ...
+Sample Solution:-
+Python Code: def longest_word(filename): with open(filename, 'r') as infile: words = infile.read().split() max_len = len(max(words, key=len)) return [word for word in words if len(word) == max_len] print(longest_word('test.txt'))
+
+8.Write a Python program to count the number of lines in a text file. 
+
+  Contain of text.txt. ...
+Sample Solution:-
+Python Code: def file_lengthy(fname): with open(fname) as f: for i, l in enumerate(f): pass return i + 1 print("Number of lines in the file: ",file_lengthy("test.txt")) ...
+Flowchart:
+Python Code Editor
+
+9.Write a Python program to count the frequency of words in a file. 
+
+  def word_count(str): counts = dict() words = str.split() for word in words: if word in counts: counts[word] += 1 else: counts[word] = 1 return counts print( word_count('the quick brown fox jumps over the lazy dog.'))
+
+10.Write a Python program to write a list to a file. 
+
+  You can read a text file using the open() and readlines() methods. To read a text file into a list, use the split() method. This method splits strings into a list at a certain character. In the example above, we split a string into a list based on the position of a comma and a space (“, ”).
+
+11.Write a Python program to copy the contents of a file to another file.
+
+  Open one file called test. txt in read mode.
+Open another file out. txt in write mode.
+Read each line from the input file and write it into the output file.
+Exit.
+
+12.Explain Exception handling? What is an Error in Python?
+
+   An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program's instructions. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. 
+
+13.How many except statements can a try-except block have? Name Some built-in exception classes:
+
+   There has to be at least one except statement
+
+14.When will the else part of try-except-else be executed?
+
+  When will the else part of try-except-else be executed? Explanation: The else part is executed when no exception occurs.
+
+15.Can one block of except statements handle multiple exception? 
+
+   In Python, try-except blocks can be used to catch and respond to one or multiple exceptions. In cases where a process raises more than one possible exception, they can all be handled using a single except clause.
+
+16.When is the finally block executed? 
+
+   The finally block will be executed no matter if the try block raises an error or not. This can be useful to close objects and clean up resources
+
+17.What happens when „1‟== 1 is executed? 
+
+   it simply evaluates to false and does not raise any exception.
+
+18.How Do You Handle Exceptions With Try/Except/Finally In Python?Explain with coding snippets.
+
+   To handle the exception, we have put the code, result = numerator/denominator inside the try block. Now when an exception occurs, the rest of the code inside the try block is skipped. The except block catches the exception and statements inside the except block are executed
+
+19.Write python program that user to enter only odd numbers, else will raise an exception. 
+
+    num = int (input (“Enter any number to test whether it is odd or even: “) if (num % 2) == 0: print (“The number is even”) else: print (“The provided number is odd”) Output: Enter any number to test whether it is odd or even: 887 887 is odd.
+
+20.What are oops concepts? Is multiple inheritance supported in java 
+
+    Multiple inheritance in java is the capability of creating a single class with multiple superclasses. Unlike some other popular object oriented programming languages like C++, java doesn't provide support for multiple inheritance in classes.
+
+20.How to Define a Class in Python? What Is Self? Give An Example Of A Python Class
+
+    Create a class named Person, use the __init__() function to assign values for name and age: class Person: def __init__(self, name, age): self.name = name. self.age = age
+
+21.Write a Python class named Rectangle constructed by a length and width and a method which will compute the area of a rectangle  
+
+   The program takes the length and breadth from the user and finds the area of the rectangle using classes.
+
+22.Write a Python class named Circle constructed by a radius and two methods which will compute the area and the perimeter of a circle
+
+    Write a Python class named Circle constructed from a radius and two methods that will compute the area and the perimeter of a circle.   
+
+23.Explain Inheritance in Python with an example? What is init? Or What Is A Constructor In Python? 
+
+   Constructor are the functions of a class that are invoked at the time of object creation. Inheritance is the property of object-oriented programming in which one class inherits the properties of another class. Inherited Class is the class whose properties are inherited by another class.
+
+24.What is Instantiation in terms of OOP terminology?
+
+   Method − A special kind of function that is defined in a class definition. Object − A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods
+
+25.What is used to check whether an object o is an instance of class A?
+
+   The isinstance() function returns True if the specified object is of the specified type, otherwise False . If the type parameter is a tuple, this function will return True if the object is one of the types in the tuple.
+
+26.What relationship is appropriate for Course and Faculty?
+
+   A department offers multiple courses ( Course objects), but in our implementation a course can only have a single department – this is a one-to-many relationship. It is also bidirectional
+
+27.What relationship is appropriate for Student and Person? 
+
+    Objects are an encapsulation of variables and functions into a single entity. Objects get their variables and functions from classes. Classes are essentially a template to create your objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
